@@ -10,7 +10,7 @@ from streamlit_option_menu import option_menu
 import streamlit as st
 
 used_car_model = pickle.load(open('Used_cars_model.sav','rb'))
-riding_model = pickle.load(open('CRidingMowers_model.sav','rb'))
+riding_model = pickle.load(open('RidingMowers_model.sav','rb'))
 
 
 
@@ -96,3 +96,4 @@ if selected == 'Used_cars':
         Price_predict = round(Price_predict[0],2)
 
     st.success(Price_predict)
+
